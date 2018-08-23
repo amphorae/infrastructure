@@ -16,7 +16,6 @@ resource "github_team_repository" "amphorae_admins_infrastructure" {
   permission = "admin"
 }
 
-
 resource "github_team_repository" "amphorae_admins_dockerfiles" {
   team_id    = "${github_team.amphorae_admins.id}"
   repository = "${github_repository.dockerfiles.name}"
