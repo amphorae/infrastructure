@@ -1,10 +1,7 @@
-provider "github" {
-  token        = "${var.github_token}"
-  organization = "amphorae"
-}
-
 resource "github_repository" "infrastructure" {
   name = "infrastructure"
+  has_projects = true
+  has_issues = false
 }
 
 resource "github_repository" "dockerfiles" {
