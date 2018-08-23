@@ -44,18 +44,15 @@ resource "cloudflare_record" "mx_aspmx3" {
 }
 
 resource "cloudflare_record" "google" {
-  domain   = "amphorae.xyz"
-  name     = "amphorae.xyz"
-  value    = "google-site-verification=UHqO8TbKjOCEAEiLihwhTf0xXHsYjwT84_TDlOsAsks"
-  type     = "TXT"
+  domain = "amphorae.xyz"
+  name   = "amphorae.xyz"
+  value  = "google-site-verification=UHqO8TbKjOCEAEiLihwhTf0xXHsYjwT84_TDlOsAsks"
+  type   = "TXT"
 }
 
 resource "cloudflare_record" "github" {
-  domain   = "amphorae.xyz"
-  name     = "_github-challenge-amphorae.amphorae.xyz."
-  value    = "96b31a5f5a"
-  type     = "TXT"
+  domain = "amphorae.xyz"
+  name   = "_github-challenge-amphorae.amphorae.xyz."
+  value  = "96b31a5f5a"
+  type   = "TXT"
 }
-
-
-
